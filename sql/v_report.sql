@@ -9,4 +9,5 @@ from
 group by
   a_model
 order by
-  4 desc;
+  4 asc,
+  1 desc;
