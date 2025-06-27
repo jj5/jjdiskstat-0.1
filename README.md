@@ -18,6 +18,8 @@ So the process is basically:
 - clean-up the imported data and stash it in the `t_clean` table
 - materialize the various views for fast queries
 
+The final report is in the `t_report` table.
+
 ## config.php
 
 The config.php file should look something like this:
