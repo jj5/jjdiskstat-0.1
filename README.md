@@ -10,10 +10,11 @@ There are some notes over here:
 
 ## Processing
 
-So the process is basically:
+The process is basically:
 
-- download a data file for a recent quarter (2025 Q1)
-- create the database schema
+- download a data file for a recent quarter (2025 Q1) into /var/lib/mysql/backblaze
+- extract the CSV files from the downloaded ZIP file
+- create the database schema in a MariaDB database
 - import the CSV files into the `t_backblaze` table
 - clean-up the imported data and stash it in the `t_clean` table
 - materialize the various views for fast queries
