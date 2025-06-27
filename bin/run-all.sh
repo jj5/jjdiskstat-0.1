@@ -29,7 +29,7 @@ main() {
     exit 1;
   }
 
-  time bin/5-materialize.php || {
+  time bin/5-materialize.sh || {
     echo "error: failed to materialize views." >&2;
     exit 1;
   }
